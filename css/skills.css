@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50px;
+    right: 50px;
+    padding: 15px 40px;
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+span {
+    font-size: 20px;
+    color: #ce441a;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: #007bff;
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 0 12px;
+    font-size: 2rem;
+    color: #f5efef;
+    display: inline-block;
+    transition: transform .3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* Skills List */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #2e2e2e; /* latar belakang utama */
+    color: #f5f5f5; /* teks default agar kontras dengan latar belakang gelap */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.cv-container {
+    /* Hapus background putih, padding dan border radius */
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    max-width: 500px;
+    text-align: center;
+    color: inherit;
+}
+
+.cv-photo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #0ea5e9;
+    margin-bottom: 1rem;
+}
+
+.job-title {
+    font-size: 1.2rem;
+    color: #0ea5e9;
+    margin-bottom: 1rem;
+}
+
+.bio {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+}
+
+.social-links a {
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    color: #f5f5f5;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0ea5e9;
+}
+
+h3 {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.skills {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.skills li {
+    background: #e0f2fe;
+    color: #0284c7;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 0.85rem;
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background: #0ea5e9;
+    color: white;
+    text-decoration: none;
+    border-radius: 1.5rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+    background: #0284c7;
+}
+
+
+/* Mobile Menu */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        top: 15px;
+        left: 20px;
+        right: 20px;
+        padding: 12px 20px;
+        border-radius: 15px;
+    }
+
+    .nav-links {
+        display: none;
+        position: fixed;
+        top: 70px;
+        right: 0;
+        width: 60%;
+        height: calc(100vh - 70px);
+        background: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none !important;
+    }
+
+    .nav-links {
+        display: flex !important;
+    }
+}

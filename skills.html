@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hensi Geraldi Irot - Online CV</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link rel="stylesheet" href="css/skills.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/logo1.jpeg" alt="Logo" />
+      <span>Nzyy.</span>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="skills.html">Skills</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+  </nav>
+
+  <!-- CV Section (Replace the old "Home" section with this) -->
+  <section class="cv-container" style="margin-top: 120px;">
+ 
+    <h1>Hensi Geraldi Irot</h1>
+    <p class="job-title">Web Developer | Problem Solver | Tech Enthusiast</p>
+    <p class="bio">
+      Saya seorang web developer yang suka membangun website interaktif dan responsif.
+      Fokus saya adalah menciptakan tampilan yang menarik sekaligus fungsional.
+    </p>
+
+    <div class="social-icons">
+      <a href="https://wa.me/6282239791258" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://instagram.com/hensigeraldi_" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/share/1EoQDvdb29/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hensiirot100@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <h3>Skills</h3>
+    <ul class="skills">
+      <li>HTML & CSS</li>
+      <li>JavaScript</li>
+      <li>Responsive Design</li>
+      <li>UI/UX</li>
+    </ul>
+
+    <a href="CV_Hensi.pdf" class="download-btn" download>📄 Download CV</a>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      var navLinks = document.getElementById("navLinks");
+      navLinks.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
